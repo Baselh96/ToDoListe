@@ -1,31 +1,58 @@
 {
   "ToDoList": [
     {
+      "id": 1,
       "title": "Einkaufen",
       "categorie": "Wichtig",
-      "date": "2023-04-12T22:00:00.000Z",
-      "done_date": "2023-04-13T22:00:00.000Z",
-      "status": "offen",
+      "status": "done",
       "description": "EInkaufen gehen bitte",
-      "id": 1
+      "date": "Fri Aug 11 2023 03:08:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "done_date": "Wed Jan 10 2024 01:00:00 GMT+0100 (Mitteleuropäische Normalzeit)"
     },
     {
-      "title": "Sport machen",
+      "id": 2,
+      "title": "Sport treiben",
       "categorie": "Unwichtig",
-      "date": "2023-04-12T22:00:00.000Z",
-      "done_date": "2023-04-13T22:00:00.000Z",
-      "status": "offen",
-      "description": "Spart machen bitte",
-      "id": 2
+      "status": "done",
+      "description": "Spart machen bitted",
+      "date": "Sun Aug 11 2024 07:29:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "done_date": "Fri Aug 16 2024 08:04:00 GMT+0200 (Mitteleuropäische Sommerzeit)"
     },
     {
+      "id": 3,
       "title": "Wäche waschen",
       "categorie": "langfristig",
-      "date": "2023-04-22T20:00:00.000Z",
-      "done_date": "2023-04-23T22:00:00.000Z",
       "status": "done",
-      "description": "ich muss meine Wäsche waschen",
-      "id": 3
+      "description": "ich muss meine Wäsche waschend",
+      "date": "Thu Aug 01 2024 03:28:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "done_date": "Sat Jan 13 2024 01:00:00 GMT+0100 (Mitteleuropäische Normalzeit)"
+    },
+    {
+      "id": 4,
+      "title": "sdfsdf",
+      "categorie": "asdasdsasd",
+      "status": "open",
+      "description": "werfwrefasdfasd",
+      "date": "Tue Aug 20 2024 22:28:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "done_date": "Tue Aug 20 2024 01:43:00 GMT+0200 (Mitteleuropäische Sommerzeit)"
+    },
+    {
+      "id": 6,
+      "title": "asdf",
+      "categorie": "",
+      "status": "open",
+      "description": "asdf",
+      "date": "Tue Aug 20 2024 22:44:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "done_date": ""
+    },
+    {
+      "id": 7,
+      "title": "sdfsdfsdfsfd13qwe",
+      "categorie": "",
+      "status": "open",
+      "description": "adsfyxcyx",
+      "date": "Tue Aug 20 2024 23:23:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "done_date": ""
     }
   ]
 }

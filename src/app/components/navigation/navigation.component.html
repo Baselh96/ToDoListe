@@ -7,10 +7,12 @@
                 Deine ToDo-Liste
             </span>
         </div>
-        <button class="btn btn-light" type="button" id="tool" data-bs-toggle="tooltip" data-bs-placement="bottom"
-            title="Hinzufügen ein ToDo">
+        <button class="navbar-brand btn btn-danger" type="button" id="tool" data-bs-toggle="modal"
+            data-bs-target="#createModal" title="Hinzufügen ein ToDo">
             <i class="bi bi-clipboard2-plus-fill me-2 fw-bold"></i>
-            ToDo Hinzufügen
+            ToDo hinzufügen
         </button>
     </div>
+    <!-- dialog -->
+    <app-dialog modalId="createModal"></app-dialog>
 </nav>

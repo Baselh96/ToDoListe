@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'toDoList';
+
+  public closeAlert() {
+    const toastLiveExample = document.getElementById('alertPart');
+    toastLiveExample?.classList.remove("show");
+    toastLiveExample?.classList.add("hide");
+  }
 }

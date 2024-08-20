@@ -1,0 +1,96 @@
+<!-- Modal -->
+<div class="modal fade" [id]="modalId" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="exampleModalLabel">{{title}}</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="needValidation" [formGroup]="dialogService.dialogForm">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" formControlName="title" id="titleInput" required>
+                        <label for="titleInput">Titel*</label>
+                        <div class="valid-feedback">
+                            Sieht gut aus!
+                        </div>
+                        <div class="invalid-feedback">
+                            Bitte schreiben Sie den Titel des ToDos!
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" formControlName="categorie" id="categorieInput">
+                        <label for="categorieInput">Kategurie</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <select class="form-select" formControlName="status" id="statusSelect"
+                            aria-label="Floating label select example" required>
+                            <option value="open">Öffen</option>
+                            <option value="done">Erledigt</option>
+                        </select>
+                        <label for="statusSelect">Status*</label>
+                    </div>
+                    <!-- <div class="form-floating mb-3">
+                        <input type="datetime-local" class="form-control" (change)="changeDate($event)"
+                            formControlName="date" id="dateInput">
+                        <label for="dateInput">Erstellt am</label>
+                    </div> -->
+                    <div class="row g-2 form-floating mb-3">
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="date" class="form-control" formControlName="createdDate" id="dateInput"
+                                    required>
+                                <label for="dateInput">Erstellt am Datum*</label>
+                                <div class="valid-feedback">
+                                    Sieht gut aus!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Bitte wählen Sie ein Datum aus!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="time" class="form-control" formControlName="createdTime"
+                                    id="createdTimeInput" required>
+                                <label for="createdTimeInput">Erstellt an der Urzeit*</label>
+                                <div class="valid-feedback">
+                                    Sieht gut aus!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Bitte wählen Sie eine Uhrzeit aus!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-2 form-floating mb-3">
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="date" class="form-control" formControlName="doneDate" id="doneDateInput">
+                                <label for="doneDateInput">Erledigen bis Datum</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="time" class="form-control" formControlName="doneTime" id="doneTimeInput">
+                                <label for="doneTimeInput">Erledigen bis Urzeit</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" formControlName="description" id="descriptionInput"
+                            style="height: 100px"></textarea>
+                        <label for="descriptionInput">Beschreibung</label>
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" [id]="modalId + '-close'"
+                    data-bs-dismiss="modal">abbrechen</button>
+                <button type="button" class="btn btn-primary" (click)="saveToDo()"
+                    title="Änderungen speichern">speichern</button>
+            </div>
+        </div>
+    </div>
+</div>

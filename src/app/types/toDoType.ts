@@ -4,6 +4,6 @@ export declare type ToDo = {
     categorie: string;
     status: string;
     description: string;
-    date: Date;
-    done_date: Date;
+    date: string;
+    done_date: string;
 };
