@@ -1,15 +1,6 @@
 {
   "ToDoList": [
     {
-      "id": 1,
-      "title": "Einkaufen",
-      "categorie": "Wichtig",
-      "status": "done",
-      "description": "EInkaufen gehen bitte",
-      "date": "Fri Aug 11 2023 03:08:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
-      "done_date": "Wed Jan 10 2024 01:00:00 GMT+0100 (Mitteleuropäische Normalzeit)"
-    },
-    {
       "id": 2,
       "title": "Sport treiben",
       "categorie": "Unwichtig",
@@ -46,12 +37,39 @@
       "done_date": ""
     },
     {
-      "id": 7,
-      "title": "sdfsdfsdfsfd13qwe",
+      "id": 8,
+      "title": "Hello Basel! wie geht es dir",
       "categorie": "",
       "status": "open",
-      "description": "adsfyxcyx",
-      "date": "Tue Aug 20 2024 23:23:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "description": "",
+      "date": "Wed Aug 21 2024 16:21:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "done_date": ""
+    },
+    {
+      "id": 9,
+      "title": "asdfasdf",
+      "categorie": "",
+      "status": "open",
+      "description": "",
+      "date": "Wed Aug 21 2024 16:21:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "done_date": ""
+    },
+    {
+      "id": 10,
+      "title": "sdfgdfgh",
+      "categorie": "sdfgsd",
+      "status": "done",
+      "description": "asdfgasdf",
+      "date": "Wed Aug 21 2024 16:21:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "done_date": ""
+    },
+    {
+      "id": 11,
+      "title": "ghdfgdgf",
+      "categorie": "",
+      "status": "open",
+      "description": "",
+      "date": "Wed Aug 21 2024 16:21:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
       "done_date": ""
     }
   ]

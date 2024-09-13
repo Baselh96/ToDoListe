@@ -8,7 +8,7 @@ export class AlertService {
     const alert = document.getElementById('alertPart');
     const alertIcon = document.getElementById('alertIcon');
     const alertText = document.getElementById('alertText');
-    alert!.className = `alert fade position-absolute bottom-0 end-0 mb-3 mx-2 show alert-success`;
+    alert!.className = `alert fade position-fixed bottom-0 end-0 mb-3 mx-2 show alert-success`;
     alertIcon!.className = `bi mx-2 bi-check2-circle`;
     alertText!.innerText = message;
   }
@@ -17,7 +17,7 @@ export class AlertService {
     const alert = document.getElementById('alertPart');
     const alertIcon = document.getElementById('alertIcon');
     const alertText = document.getElementById('alertText');
-    alert!.className = `alert fade position-absolute bottom-0 end-0 mb-3 mx-2 show alert-primary`;
+    alert!.className = `alert fade position-fixed bottom-0 end-0 mb-3 mx-2 show alert-primary`;
     alertIcon!.className = `bi mx-2 bi-info-circle-fill`;
     alertText!.innerText = message;
   }

@@ -8,13 +8,15 @@ import { ToDoListComponent } from './components/to-do-list/to-do-list.component'
 import { HttpClientModule } from '@angular/common/http';
 import { DialogComponent } from './components/dialog/dialog.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DateFormatPipe } from './pipes/date-format.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     ToDoListComponent,
-    DialogComponent
+    DialogComponent,
+    DateFormatPipe
   ],
   imports: [
     BrowserModule,

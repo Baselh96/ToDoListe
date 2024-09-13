@@ -22,6 +22,7 @@ export class ToDoListComponent implements OnInit {
   public tableData: ToDo[] = [];
   public tableDataInit: ToDo[] = [];
   private toDoListService: ToDoListService = inject(ToDoListService);
+  public tableView: boolean = false;
 
   private dialogPropertyState = new Subject<ToDo>();
   public dialogProperty: Observable<ToDo> = this.dialogPropertyState.asObservable();
