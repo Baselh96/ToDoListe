@@ -1,0 +1,76 @@
+{
+  "ToDoList": [
+    {
+      "id": 2,
+      "title": "Sport treiben",
+      "categorie": "Unwichtig",
+      "status": "done",
+      "description": "Spart machen bitted",
+      "date": "Sun Aug 11 2024 07:29:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "done_date": "Fri Aug 16 2024 08:04:00 GMT+0200 (Mitteleuropäische Sommerzeit)"
+    },
+    {
+      "id": 3,
+      "title": "Wäche waschen",
+      "categorie": "langfristig",
+      "status": "done",
+      "description": "ich muss meine Wäsche waschend",
+      "date": "Thu Aug 01 2024 03:28:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "done_date": "Sat Jan 13 2024 01:00:00 GMT+0100 (Mitteleuropäische Normalzeit)"
+    },
+    {
+      "id": 4,
+      "title": "sdfsdf",
+      "categorie": "asdasdsasd",
+      "status": "open",
+      "description": "werfwrefasdfasd",
+      "date": "Tue Aug 20 2024 22:28:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "done_date": "Tue Aug 20 2024 01:43:00 GMT+0200 (Mitteleuropäische Sommerzeit)"
+    },
+    {
+      "id": 6,
+      "title": "asdf",
+      "categorie": "",
+      "status": "open",
+      "description": "asdf",
+      "date": "Tue Aug 20 2024 22:44:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "done_date": ""
+    },
+    {
+      "id": 8,
+      "title": "Hello Basel! wie geht es dir",
+      "categorie": "",
+      "status": "open",
+      "description": "",
+      "date": "Wed Aug 21 2024 16:21:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "done_date": ""
+    },
+    {
+      "id": 9,
+      "title": "asdfasdf",
+      "categorie": "",
+      "status": "open",
+      "description": "",
+      "date": "Wed Aug 21 2024 16:21:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "done_date": ""
+    },
+    {
+      "id": 10,
+      "title": "sdfgdfgh",
+      "categorie": "sdfgsd",
+      "status": "done",
+      "description": "asdfgasdf",
+      "date": "Wed Aug 21 2024 16:21:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "done_date": ""
+    },
+    {
+      "id": 11,
+      "title": "ghdfgdgf",
+      "categorie": "",
+      "status": "open",
+      "description": "",
+      "date": "Wed Aug 21 2024 16:21:00 GMT+0200 (Mitteleuropäische Sommerzeit)",
+      "done_date": ""
+    }
+  ]
+}
