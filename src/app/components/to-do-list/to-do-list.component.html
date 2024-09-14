@@ -62,7 +62,7 @@
             style="max-width: 85rem;">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <div class="">
-                    {{row.title}}
+                    {{row.categorie}}
                 </div>
                 <div class="align-items-center">
                     <span>Status: </span>
@@ -84,8 +84,8 @@
                 </div>
             </div>
             <div class="card-body">
-                <h5 class="card-title">{{row.categorie}}</h5>
-                <p class="card-text">{{row.description}}</p>
+                <h5 class="card-title fs-6">{{row.title}}</h5>
+                <p class="card-text fs-6">{{row.description}}</p>
             </div>
             <div
                 [ngClass]="' d-flex justify-content-around align-items-center card-footer bg-transparent'+ (row.status === 'done' ? 'border-success' : 'border-info')">
