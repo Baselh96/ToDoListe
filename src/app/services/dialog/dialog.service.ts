@@ -18,7 +18,7 @@ export class DialogService {
 
   public postToDo(toDo: ToDo, modalId: string, toDoListService: ToDoListService) {
     this.apiService.post(toDo).subscribe({
-      next: (data) => {
+      next: () => {
         toDoListService.getToDoList();
         this.initForm();
         DialogService.closeModal(modalId);

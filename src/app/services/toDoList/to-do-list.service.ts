@@ -26,7 +26,10 @@ export class ToDoListService {
       next: () => {
         this.getToDoList();
         DialogService.closeModal(modalId);
-        if (dialogService) dialogService.initForm();
+        if (dialogService) {
+          dialogService.initForm();
+          console.log(12312);
+        }
         AlertService.doSuccessAlert("Sie haben das ToDo erfolgreich geändert. ");
       },
       error: (error) => AlertService.doInfoAlert(error.message)
