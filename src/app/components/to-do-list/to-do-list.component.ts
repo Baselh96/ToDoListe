@@ -2,7 +2,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { AlertService } from 'src/app/services/alert/alert.service';
 import { ToDoListService } from 'src/app/services/toDoList/to-do-list.service';
-import { ToDo } from 'src/app/types/toDoType';
+import { ToDo, UUID } from 'src/app/types/toDoType';
 
 @Component({
   selector: 'app-to-do-list',
@@ -46,7 +46,7 @@ export class ToDoListComponent implements OnInit {
     }
   }
 
-  public delete(id: number) {
+  public delete(id: UUID) {
     this.toDoListService.deleteToDo(id);
   }
 

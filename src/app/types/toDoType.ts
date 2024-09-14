@@ -1,5 +1,5 @@
 export declare type ToDo = {
-    id: number;
+    id: UUID;
     title: string;
     categorie: string;
     status: string;
@@ -7,3 +7,5 @@ export declare type ToDo = {
     date: string;
     done_date: string;
 };
+
+export type UUID = string;

@@ -41,11 +41,11 @@
                 <td>
                     <div class="row">
                         <div class="btn-group" role="group" aria-label="Third group">
-                            <button type="button" class="btn" (click)="openDialog(row)" data-bs-toggle="modal"
-                                data-bs-target="#updateModal" title="ToDo ändern">
+                            <button type="button" class="btn my-icon-btn" (click)="openDialog(row)"
+                                data-bs-toggle="modal" data-bs-target="#updateModal" title="ToDo ändern">
                                 <i class="bi bi-pencil-square fs-4"></i>
                             </button>
-                            <button type="button" class="btn" (click)="delete(row.id)" title="ToDo löschen">
+                            <button type="button" class="btn my-icon-btn" (click)="delete(row.id)" title="ToDo löschen">
                                 <i class="bi bi-trash fs-4 text-danger"></i>
                             </button>
                         </div>
@@ -58,7 +58,7 @@
     <!-- Cards -->
     <div *ngIf="!tableView">
         <div *ngFor="let row of tableData"
-            [ngClass]="'card mb-3 ' + (row.status === 'done' ? 'border-info' : 'border-success')"
+            [ngClass]="'shadow-lg my-card card mb-3 ' + (row.status === 'done' ? 'border-success' : 'border-info')"
             style="max-width: 85rem;">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <div class="">
@@ -73,11 +73,11 @@
                 </div>
                 <div>
                     <div class="btn-group" role="group" aria-label="Third group">
-                        <button type="button" class="btn" (click)="openDialog(row)" data-bs-toggle="modal"
+                        <button type="button" class="btn my-icon-btn" (click)="openDialog(row)" data-bs-toggle="modal"
                             data-bs-target="#updateModal" title="ToDo ändern">
                             <i class="bi bi-pencil-square fs-4 mx-4"></i>
                         </button>
-                        <button type="button" class="btn" (click)="delete(row.id)" title="ToDo löschen">
+                        <button type="button" class="btn my-icon-btn" (click)="delete(row.id)" title="ToDo löschen">
                             <i class="bi bi-trash fs-4 text-danger"></i>
                         </button>
                     </div>
@@ -88,7 +88,7 @@
                 <p class="card-text">{{row.description}}</p>
             </div>
             <div
-                [ngClass]="' d-flex justify-content-around align-items-center card-footer bg-transparent'+ (row.status === 'done' ? 'border-info' : 'border-success')">
+                [ngClass]="' d-flex justify-content-around align-items-center card-footer bg-transparent'+ (row.status === 'done' ? 'border-success' : 'border-info')">
                 <div>
                     <span>Start: {{row.date | dateFormat}}</span>
                 </div>

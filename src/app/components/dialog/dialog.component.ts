@@ -2,7 +2,7 @@ import { Component, inject, Input, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { DialogService } from 'src/app/services/dialog/dialog.service';
 import { ToDoListService } from 'src/app/services/toDoList/to-do-list.service';
-import { ToDo } from 'src/app/types/toDoType';
+import { ToDo, UUID } from 'src/app/types/toDoType';
 
 @Component({
   selector: 'app-dialog',
@@ -14,7 +14,7 @@ export class DialogComponent implements OnInit {
   @Input() modalId: string = "";
 
   public title: string = "Neue ToDO zu der Liste hinzufügen";
-  public id: number = 0;
+  public id: UUID | undefined;
 
   private toDoListService: ToDoListService = inject(ToDoListService);
   public dialogService: DialogService = inject(DialogService);
@@ -38,7 +38,7 @@ export class DialogComponent implements OnInit {
     if (this.dialogService.dialogForm.valid) {
       const newToDo: ToDo = this.dialogService.copyDialogFormToToDo();
       if (this.toDo) {
-        newToDo.id = this.id;
+        newToDo.id = this.id as UUID;
         this.toDoListService.updateToDo(newToDo, this.modalId, this.dialogService);
       } else {
         this.dialogService.postToDo(newToDo, this.modalId, this.toDoListService);
