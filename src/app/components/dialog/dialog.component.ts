@@ -21,7 +21,7 @@ export class DialogComponent implements OnInit {
 
   ngOnInit(): void {
     this.dialogService.initForm();
-
+  
     if (this.toDo) {
       this.toDo.subscribe(toDo => {
         this.title = `Todo "${toDo.title}" ändern`;
